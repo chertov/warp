@@ -73,7 +73,8 @@ use http::{
 };
 use hyper::Body;
 
-pub(crate) use self::sealed::{CombineRejection, IsReject};
+pub use self::sealed::{IsReject};
+pub(crate) use self::sealed::{CombineRejection};
 
 /// Rejects a request with `404 Not Found`.
 #[inline]
